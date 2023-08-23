@@ -2,25 +2,32 @@
 main {}
 /* #main_bnr */
 main #main_bnr {}
-main #main_bnr #main_slide {}
+main #main_bnr #main_slide {position: relative;}
 main #main_bnr #main_slide .swiper-wrapper {}
-main #main_bnr #main_slide .swiper-wrapper .swiper-slide {position: relative;}
+main #main_bnr #main_slide .swiper-wrapper .swiper-slide {}
 main #main_bnr #main_slide .swiper-wrapper .swiper-slide .txt {
     position: absolute; 
     bottom: 124px; left: 120px;
-    display: flex; gap:59px;
+    display: flex; gap:100px;
 }
-main #main_bnr #main_slide .swiper-wrapper .swiper-slide .txt p {font-size: 1.333rem; color:#ccc;}
-main #main_bnr #main_slide .swiper-wrapper .swiper-slide .txt p.active {font-weight: 700; color:#000;}
 main #main_bnr #main_slide .swiper-wrapper .swiper-slide a {
     width: 100%; height: 900px;
     display: block;
     background-size: cover;
     background-position: center;
 }
-main #main_bnr #main_slide .swiper-wrapper .slide1 a {background-image: url(../images/main_bnr1.jpg);}
-main #main_bnr #main_slide .swiper-wrapper .slide2 a {background-image: url(../images/main_bnr2.jpg);}
-main #main_bnr #main_slide .swiper-scrollbar {bottom: 170px;  left: 120px; width: 326px;}
-main #main_bnr #main_slide .swiper-scrollbar-drag {background-color: #222;}
+main #main_bnr #main_slide .swiper-wrapper .swiper-slide a img {width: 100%;}
+main #main_bnr #main_slide .swiper-pagination {
+    bottom: 170px;  left: 120px; width: 366px; text-align: left;
+    display: flex; justify-content: space-between;
+}
+main #main_bnr #main_slide .swiper-pagination-bullet span {
+    font-size: 1.333rem; color:#000; font-weight: 700;
+    display: block; padding-top: 20px;
+}
+main #main_bnr #main_slide .swiper-pagination-bullet {
+    width: 153px; border-radius: 0; height: 5px;
+    background-color: #000;
+}
 /* #new_book */
 main #new_book {}
