@@ -1,0 +1,48 @@
+/* header */
+header {
+    position: fixed; top: 0; left: 0; z-index: 999;
+    height: 100px; width: 100%;
+    display: flex; justify-content: space-between;
+    padding: 0 30px; background-color: rgba(255,255,255,0);
+    transition: background-color 0.5s;
+}
+header:hover {background-color: #fff;}
+header .left {display: flex;}
+header .left h1 {width: 107px; padding: 30px 0; margin-right: 40px;}
+header .left h1 a {}
+header .left h1 a img {width: 100%;}
+header .left nav {}
+header .left nav > ul {display: flex;}
+header .left nav > ul > li {position: relative;}
+header .left nav > ul > li > a {
+    display: block; line-height: 100px;
+    padding: 0 20px; height: 100px;
+    text-align: center;
+    font-size: 1.333rem;
+    
+}
+header .left nav > ul > li > a.active {
+    border-bottom: 3px solid #5A85A6;
+    color: #5A85A6; font-weight: 700;
+}
+header .left nav > ul > li > .sub {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    background-color: #fff;
+}
+header .left nav > ul > li > .sub li {}
+header .left nav > ul > li > .sub li a {
+    display: block;
+    width: 100%; padding: 20px;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+header .left nav > ul > li > .sub li a:hover {color: #5A85A6;}
+header .user_menu {
+    display: flex; align-items: center;
+}
+header .user_menu a:first-child {font-size: 1.333rem;}
+header .user_menu a {padding: 20px;}
+header .user_menu a:last-child {margin-right: 0; padding-right: 0;}
+header .user_menu .lang {}
+header .user_menu a img {}
+/* footer */

@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <title>민음사</title>
     <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- favicion -->
     <!-- stylesheet -->
     <link rel="stylesheet" href="./style/reset.css">
@@ -14,8 +16,141 @@
     <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header>
+        <div class="left">
+            <h1><a href="#"><img src="./images/minumsa.png" alt="민음사"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">브랜드</a>
+                        <ul class="sub">
+                            <li><a href="#">브랜드 소개</a></li>
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">역사</a></li>
+                            <li><a href="#">채용정보</a></li>
+                            <li><a href="#">거래처 안내</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">도서</a>
+                        <ul class="sub">
+                            <li><a href="#">전체 도서</a></li>
+                            <li><a href="#">카테고리별 도서</a></li>
+                            <li><a href="#">전자책</a></li>
+                            <li><a href="#">리뷰</a></li>
+                            <li><a href="#">도서 · 작가 DB</a></li>
+                            <li><a href="#">도서목록 다운로드</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">문학상</a>
+                        <ul class="sub">
+                            <li><a href="#">오늘의 작가상</a></li>
+                            <li><a href="#">김수영 문학상</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">북클럽 · 정기구독</a>
+                        <ul class="sub">
+                            <li><a href="#">민음사 멤버십</a></li>
+                            <li><a href="#">민음북클럽</a></li>
+                            <li><a href="#">릿터 · 한편 정기구독</a></li>
+                            <li><a href="#">민음북샵</a></li>
+                            <li><a href="#">민음사 패밀리데이</a></li>
+                            <li><a href="#">e-스탬프 이벤트</a></li>
+                            <li><a href="#">2023 민음사x동네서점</a></li>
+                            <li><a href="#">추천 북로그 & 북캐스트</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">커뮤니티</a>
+                        <ul class="sub">
+                            <li><a href="#">민음커뮤니티</a></li>
+                            <li><a href="#">독서모임 캘린더</a></li>
+                            <li><a href="#">연재</a></li>
+                            <li><a href="#">책의 사생활</a></li>
+                            <li><a href="#">원고투고</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">공지사항 · 이벤트</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항 · 이벤트</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">2차 저작권 가이드</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user_menu">
+            <a href="#" class="lang">KR</a>
+            <a href="#" class="login"><img src="./images/icon_user.png" alt="로그인"></a>
+            <a href="#" class="search"><img src="./images/icon_search.png" alt="검색"></a>
+        </div>
+    </header>
+    <main>
+        <!-- main_bnr -->
+        <section id="main_bnr">
+            <div class="swiper" id="main_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="txt">
+                            <p class="active">말 놓을 용기</p>
+                            <p>에고이스트</p>
+                        </div>
+                        <a href="#" title="민음사 신작 도서 말 놓을 용기"></a>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="txt">
+                            <p>말 놓을 용기</p>
+                            <p>에고이스트</p>
+                        </div>
+                        <a href="#" title="민음사 신작 도서 에고이스트"></a>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </section>
+        <section id="new_book">
+            <div class="title">
+                <div class="tab_title">
+                    <h2><button type="button">신간 도서</button></h2>
+                    <h2><button type="button">베스트 셀러</button></h2>
+                </div>
+                <a href="#" class="more"><img src="./images/icon_more.png" alt="더보기"></a>
+            </div>
+            <div class="tab_contents">
+                <div class="contents new">
+                    <a href="#">
+                        <img src="./images/book_01.jpg" alt="">
+                        <h3>말 놓을 용기</h3>
+                        <p>이성민</p>
+                    </a>
+                    <a href="#">
+                        <img src="./images/book_02.jpg" alt="">
+                        <h3>블랙박스</h3>
+                        <p>아모스 오즈</p>
+                    </a>
+                    <a href="#">
+                        <img src="./images/book_03.jpg" alt="">
+                        <h3>에고이스트</h3>
+                        <p>다카야마 마코토</p>
+                    </a>
+                    <a href="#">
+                        <img src="./images/book_04.jpg" alt="">
+                        <h3>조금 진전 있음</h3>
+                        <p>이서하</p>
+                    </a>
+                    <a href="#">
+                        <img src="./images/book_05.jpg" alt="">
+                        <h3>고독한 밤에 호루라기를 불어라</h3>
+                        <p>이응준</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+    <!-- common.js -->
+    <script src="./script/common.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
