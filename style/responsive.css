@@ -1,5 +1,8 @@
 /* main */
 /* #main_bnr */
+@media screen and (max-width:1600px) {
+    main #new_book .tab_contents .contents a {width: calc(25% - 60px / 4);}
+}
 @media screen and (max-width:1400px) {
     main #new_book,
     main #news,
@@ -39,8 +42,9 @@
 }/* 1024px end */
 @media screen and (max-width:900px) {
     main #new_book .tab_contents .contents a {width: calc(50% - 20px / 2);}
-    main #news .contents ul {height: 1200px; flex-flow: column nowrap;}
-    main #news .contents ul li {width: 100%;}
+    main #news .contents {height: 1200px; flex-flow: column nowrap;}
+    main #news .contents a {width: 100%;}
+    main #news .contents #sub_slide {width: 100%;}
     /* #youtube */
     main #youtube .contents iframe {height: 380px;}
 }/* 900px end */

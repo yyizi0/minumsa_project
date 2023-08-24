@@ -65,49 +65,54 @@ main #news {display: flex; justify-content: space-between; margin: 60px 0 30px;}
 main #news .title {width: 50%;}
 main #news .title h2 {line-height: 54px;}
 main #news .title h2 em {font-size: 2.369rem; font-weight: 700; color:#5A85A6;}
-main #news .contents {width: 70%;}
-main #news .contents ul {
+main #news .contents {
+    width: 70%;
     display: flex; flex-flow: column wrap;
     height: 700px; gap: 20px;
 }
-main #news .contents ul li:first-child {margin-top: 30px;}
-main #news .contents ul li:hover {background-color: #fff;}
-main #news .contents ul li:last-of-type {height: 330px; background-color: rgba(0,0,0,0.0);}
-main #news .contents ul li {
+main #news .contents > a:first-child {margin-top: 50px;}
+main #news .contents > a:hover {background-color: #fff;}
+main #news .contents > a {
     background-color: #f1f1f1;
     width: calc(50% - 20px / 2);
     height: 300px;
     border-radius: 10px;
-    transition: all 0.5s;
-}
-main #news .contents ul li > a {
-    height: 100%;
     display: flex; flex-flow: column nowrap;
     justify-content: space-between; padding: 30px;
     gap:20px;
+    transition: background-color 0.3s;
 }
-main #news .contents ul li > a .category {font-size: 1.333rem; font-weight: 700;}
-main #news .contents ul li > a .info {color:#5A85A6;}
-main #news .contents ul li > a .news {color:#259F6C;}
-main #news .contents ul li > a .event {color:#FF613F;}
-main #news .contents ul li > a h3 {line-height: 40px; font-size: 1.333rem;}
-main #news .contents ul li > a .date {color:#888;}
+main #news .contents > a .category {font-size: 1.333rem; font-weight: 700;}
+main #news .contents > a .info {color:#5A85A6;}
+main #news .contents > a .news {color:#259F6C;}
+main #news .contents > a .event {color:#FF613F;}
+main #news .contents  > a h3 {line-height: 40px; font-size: 1.333rem;}
+main #news .contents > a .date {color:#888;}
 /* #news #sub_slide */
-main #news .contents ul li #sub_slide {width: 100%; height:100%;}
-main #news .contents ul li #sub_slide .swiper-wrapper {}
-main #news .contents ul li #sub_slide .swiper-wrapper .swiper-slide {height: 300px; border-radius: 10px; overflow: hidden;}
-main #news .contents ul li #sub_slide .swiper-wrapper .swiper-slide a {}
-main #news .contents ul li #sub_slide .swiper-wrapper .swiper-slide a img {height: 100%;}
-main #news .contents ul li #sub_slide .swiper-pagination {pointer-events: none; width: 20%; right: 35px; left: auto;}
-main #news .contents ul li #sub_slide .swiper-button-prev::after,
-main #news .contents ul li #sub_slide .swiper-button-next::after {display: none;}
-main #news .contents ul li #sub_slide .swiper-button-prev,
-main #news .contents ul li #sub_slide .swiper-button-next {
-    background-repeat: no-repeat;
-    transform: translate(90%, 360%); width: 75%;
+main #news .contents #sub_slide {width: calc(50% - 20px / 2); border-radius: 10px;}
+main #news .contents #sub_slide .swiper-wrapper {}
+main #news .contents #sub_slide .swiper-wrapper .swiper-slide {height: 300px;}
+main #news .contents #sub_slide .swiper-wrapper .swiper-slide a {
+    background: url(../images/event1.jpg) no-repeat center; 
+    width: 100%; height: 100%; display: block;
+    background-size: cover;
 }
-main #news .contents ul li #sub_slide .swiper-button-prev {background-image: url(../images/icon_left.png);}
-main #news .contents ul li #sub_slide .swiper-button-next {background-image: url(../images/icon_right.png);}
+main #news .contents .control {
+    display: flex; justify-content: flex-end; 
+    align-items: center; 
+    width: calc(50% -20px / 2); height: 30px; 
+    padding-right: 20px;
+} 
+main #news .contents .control .btn {
+    background-repeat: no-repeat;
+    display: block;
+    width: 30px; height: 20px;
+    cursor: pointer;
+}
+main #news .contents .control .btn_prev {background-image: url(../images/icon_left.png);}
+main #news .contents .control .btn_next {background-image: url(../images/icon_right.png);}
+main #news .contents .control .num {padding: 0 20px;}
+main #news .contents .control .num span {color:#5A85A6;}
 /* #youtube */
 main #youtube {}
 main #youtube .title {display: flex; justify-content: space-between; padding: 60px 0 30px;}

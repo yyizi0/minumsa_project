@@ -13,16 +13,26 @@ const main_slide = new Swiper('#main_slide',{
             }
     },
 })
+const num = document.querySelector("#news .num");
+const slides = document.querySelectorAll("#sub_slide .swiper-slide");
+const slideCount = slides.length;
+num.innerHTML = `<span>01</span> | 0${slideCount}`;
 const sub_slide = new Swiper('#sub_slide',{
     loop:true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.btn_prev',
+        prevEl: '.btn_next',
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".btn",
         type: "fraction",
     },
+    //현재 페이지 번호 갱신
+    on: {
+        slideChange: () => {
+        num.innerHTML = `<span>0${sub_slide.realIndex + 1}</span> | 0${slideCount}`;
+        }
+    }
 })
 // new_book
 const tab_title = document.querySelectorAll('#new_book .tab_title button')
