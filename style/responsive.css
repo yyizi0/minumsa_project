@@ -10,7 +10,7 @@
     main #main_bnr #main_slide .swiper-pagination {bottom:100px; left: 80px;}
     main #new_book .tab_contents .contents a {width: calc(33.3% - 40px / 3);}
     main #news .title {width: 30%;}
-    main #news .contents {width: 90%;}
+    main #news .contents {width: 100%;}
     /* #youtube */
     main #youtube .contents {flex-flow:column nowrap;}
     main #youtube .contents .youtube_list {flex-flow:row nowrap; gap:20px;}
@@ -43,24 +43,33 @@
 @media screen and (max-width:900px) {
     main #new_book .tab_contents .contents a {width: calc(50% - 20px / 2);}
     main #news .contents {height: 1200px; flex-flow: column nowrap;}
-    main #news .contents a {width: 100%;}
+    main #news .contents > a {width: 100%;}
     main #news .contents #sub_slide {width: 100%;}
     /* #youtube */
     main #youtube .contents iframe {height: 380px;}
 }/* 900px end */
 @media screen and (max-width:670px) {
     main section .title h2 {font-size: 1.777rem;}
-    main #news .title h2 {line-height: 40px;}
-    main #news .title h2 em {font-size: 1.777rem;}
+    /* #main_bnr */
+    main #main_bnr #main_slide .swiper-pagination {width: 200px; left: 30px;}
+    main #main_bnr #main_slide .swiper-pagination-bullet {width: 100px;}
+    main #main_bnr #main_slide .swiper-wrapper .slide1 a {background-image: url(../images/main_bnr1_mobile.jpg);}
+    main #main_bnr #main_slide .swiper-wrapper .slide2 a {background-image: url(../images/main_bnr2_mobile.jpg);}
+    /* #new_book */
     main #new_book .title .tab_title h2 button {font-size: 1.777rem;}
     main #new_book .tab_contents .contents a .book_cv {height: 250px;}
-    main #news .contents ul li > a h3 {font-size: 1.2rem;}
-    main #main_bnr #main_slide .swiper-pagination {display: none;}
-    main #main_bnr #main_slide .swiper-wrapper .slide1 a {background-image: url(../images/main_bnr1_mobile.jpg);}
-    main #main_bnr #main_slide .swiper-wrapper .slide2 a {background-image: url(../images/main_bnr2.jpg);}
+    /* #news */
+    main #news .title h2 {line-height: 40px;}
+    main #news .title h2 em {font-size: 1.777rem;}
+    main #news .contents > a h3 {font-size: 1.2rem;}
+    main #news .contents #sub_slide .swiper-wrapper .swiper-slide a {background-position: top; background-size: 500px;}
     /* #youtube */
     main #youtube .contents iframe {height: 237px;}
     /* footer */
     footer .top {flex-flow: column nowrap; gap:20px;}
     footer .btm {flex-flow: column nowrap; gap: 20px;}
 }/* 670px end */
+
+@media screen and (min-width:1200px) {
+    header .m_nav_open.active {display: none;}
+}

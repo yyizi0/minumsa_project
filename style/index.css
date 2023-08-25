@@ -93,10 +93,12 @@ main #news .contents #sub_slide {width: calc(50% - 20px / 2); border-radius: 10p
 main #news .contents #sub_slide .swiper-wrapper {}
 main #news .contents #sub_slide .swiper-wrapper .swiper-slide {height: 300px;}
 main #news .contents #sub_slide .swiper-wrapper .swiper-slide a {
-    background: url(../images/event1.jpg) no-repeat center; 
+    background:no-repeat center; 
     width: 100%; height: 100%; display: block;
     background-size: cover;
 }
+main #news .contents #sub_slide .swiper-wrapper .slide1 a {background-image: url(../images/event1.jpg);}
+main #news .contents #sub_slide .swiper-wrapper .slide2 a {background-image: url(../images/event2.jpg);}
 main #news .contents .control {
     display: flex; justify-content: flex-end; 
     align-items: center; 
