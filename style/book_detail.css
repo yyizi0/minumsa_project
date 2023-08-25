@@ -1,0 +1,37 @@
+/* main */
+main {}
+/* #book */
+main #book {}
+main #book .book {}
+main #book .book p {}
+main #book .book p img {}
+main #book .book a {}
+main #book .book a img {}
+main #book .book a span {}
+main #book .right {}
+main #book .right .info_wrap {}
+main #book .right .info_wrap h1 {}
+main #book .right .info_wrap h2 {}
+main #book .right .info_wrap p {}
+main #book .right .info_wrap p em {}
+main #book .right .info_wrap .info {}
+main #book .right .info_wrap .info dt {}
+main #book .right .info_wrap .info dd {}
+main #book .right .link_wrap {}
+main #book .right .link_wrap h2 {}
+main #book .right .link_wrap .link {}
+main #book .right .link_wrap .link a {}
+main #book .right .link_wrap .link a span {}
+main #book .right .link_wrap .link a img {}
+main #book .list {}
+main #book .list a {}
+/* #detail */
+main #detail {}
+main #detail .tab_menu {}
+main #detail .tab_menu a {}
+main #detail .tab_menu a.active {}
+main #detail .tab_contents {}
+main #detail .tab_contents .contents {}
+main #detail .tab_contents .contents .sub_title {}
+main #detail .tab_contents .contents h2 {}
+main #detail .tab_contents .contents .info {}
