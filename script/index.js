@@ -18,6 +18,7 @@ const slides = document.querySelectorAll("#sub_slide .swiper-slide");
 const slideCount = slides.length;
 num.innerHTML = `<span>01</span> | 0${slideCount}`;
 const sub_slide = new Swiper('#sub_slide',{
+    autoplay:{delay:2000},
     loop:true,
     navigation: {
         nextEl: '.btn_prev',
@@ -37,7 +38,7 @@ const sub_slide = new Swiper('#sub_slide',{
 // new_book
 const tab_title = document.querySelectorAll('#new_book .tab_title button')
 const tab_contents = document.querySelectorAll('#new_book .tab_contents .contents')
-console.log(tab_title,tab_contents)
+// console.log(tab_title,tab_contents)
 for(let i of tab_contents){i.style.display = 'none'}
 for(let i of tab_title){i.classList.remove('active')}
 tab_title[0].classList.add('active')

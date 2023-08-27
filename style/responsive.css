@@ -1,12 +1,12 @@
-/* main */
-/* #main_bnr */
 @media screen and (max-width:1600px) {
+    /* index.html */
     main #new_book .tab_contents .contents a {width: calc(25% - 60px / 4);}
+    /* book_list.html */
+    main #book_list ul li {width: calc(25% - 60px / 4);}
 }
 @media screen and (max-width:1400px) {
-    main #new_book,
-    main #news,
-    main #youtube {padding: 0 60px;}
+    main section {padding: 0 60px;}
+    /* index.html */
     main #main_bnr #main_slide .swiper-pagination {bottom:100px; left: 80px;}
     main #new_book .tab_contents .contents a {width: calc(33.3% - 40px / 3);}
     main #news .title {width: 30%;}
@@ -14,18 +14,24 @@
     /* #youtube */
     main #youtube .contents {flex-flow:column nowrap;}
     main #youtube .contents .youtube_list {flex-flow:row nowrap; gap:20px;}
+    /* book_list.html */
+    main #book_list ul li {width: calc(33.3% - 40px / 3);}
 }/* 1400px end */
+@media screen and (max-width:1240px) {
+    main #search #searchFrm fieldset #search_txt {width: 100%;}
+}
 /* header */
 @media screen and (max-width:1200px) {
     header .left nav {display: none;}
     header .user_menu a:first-child {display: none;}
     header .user_menu a:nth-child(3) {padding-right: 20px;}
     header .user_menu .open_nav {display: flex;}
+    /* book_detail.html */
+    main #book {flex-flow:column nowrap;}
 }/* 1200px end */
 @media screen and (max-width:1024px) {
-    main #new_book,
-    main #news,
-    main #youtube {padding: 0 30px;}
+    main section {padding: 0 30px;}
+    /* index.html */
     /* #main_bnr */
     main #main_bnr #main_slide .swiper-pagination {bottom:80px; left: 50px;}
     main #main_bnr #main_slide .swiper-pagination-bullet span {font-size: 1rem;}
@@ -39,22 +45,28 @@
     main #news .contents {width: 100%;}
     /* #youtube */
     main #youtube .contents iframe {height: 465px;}
+    
 }/* 1024px end */
 @media screen and (max-width:900px) {
+    /* index.html */
+    /* main bnr */
+    main #main_bnr #main_slide .swiper-wrapper .slide1 a {background-image: url(../images/main_bnr1_mobile.jpg);}
+    main #main_bnr #main_slide .swiper-wrapper .slide2 a {background-image: url(../images/main_bnr2_mobile.jpg);}
     main #new_book .tab_contents .contents a {width: calc(50% - 20px / 2);}
     main #news .contents {height: 1200px; flex-flow: column nowrap;}
     main #news .contents > a {width: 100%;}
     main #news .contents #sub_slide {width: 100%;}
     /* #youtube */
     main #youtube .contents iframe {height: 380px;}
+    /* book_list.html */
+    main #book_list ul li {width: calc(50% - 20px / 2);}
+    main #book .right {width: 100%;}
 }/* 900px end */
 @media screen and (max-width:670px) {
     main section .title h2 {font-size: 1.777rem;}
     /* #main_bnr */
     main #main_bnr #main_slide .swiper-pagination {width: 200px; left: 30px;}
     main #main_bnr #main_slide .swiper-pagination-bullet {width: 100px;}
-    main #main_bnr #main_slide .swiper-wrapper .slide1 a {background-image: url(../images/main_bnr1_mobile.jpg);}
-    main #main_bnr #main_slide .swiper-wrapper .slide2 a {background-image: url(../images/main_bnr2_mobile.jpg);}
     /* #new_book */
     main #new_book .title .tab_title h2 button {font-size: 1.777rem;}
     main #new_book .tab_contents .contents a .book_cv {height: 250px;}
@@ -68,6 +80,11 @@
     /* footer */
     footer .top {flex-flow: column nowrap; gap:20px;}
     footer .btm {flex-flow: column nowrap; gap: 20px;}
+    /* book_list.html */
+    main #search #searchFrm fieldset #search_txt::placeholder {font-size: 1rem;}
+    main #book_list ul li a .detail .book_cv {height:250px;}
+    main #search .view {display: none;}
+    main #book_list .m_filter {display: flex;}
 }/* 670px end */
 
 @media screen and (min-width:1200px) {

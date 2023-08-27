@@ -8,8 +8,8 @@ const open_nav = document.querySelector('.open_nav')
 const m_nav_open = document.querySelector('.m_nav_open')
 const m_nav_a = document.querySelectorAll('.m_nav_open > ul > li')
 const m_nav_sub = document.querySelectorAll('.m_nav_open > ul > li > .sub')
-console.log(nav,sub,nav_a,body_scroll,header_bg,)
-console.log(open_nav,m_nav_open,m_nav_sub,m_nav_a)
+// console.log(nav,sub,nav_a,body_scroll,header_bg,)
+// console.log(open_nav,m_nav_open,m_nav_sub,m_nav_a)
 // 1. 서브메뉴 안보이기
 // 2. 마우스 오버시 메뉴 보이기, active 추가
 // 3. 마우스 아웃시 메뉴 사라지게하기, active 제거

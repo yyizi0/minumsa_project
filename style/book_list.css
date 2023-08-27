@@ -1,1 +1,73 @@
 /* main */
+main section {padding: 0 120px; min-width: 420px;}
+main .title {
+    display: flex; align-items: center; justify-content: space-between;
+    margin: 60px 0 30px;
+}
+main .title h1 {font-size: 2.369rem; font-weight: 700;}
+main .title p {}
+/* #search */
+main #search {margin: 30px 0; display: flex; justify-content: space-between; align-items: center;}
+main #search #searchFrm {}
+main #search #searchFrm fieldset {
+    background-color: #f1f1f1;
+    display: flex; border-radius: 10px; overflow: hidden;
+}
+main #search #searchFrm fieldset #filter {
+    padding: 20px; appearance: none; background: url(../images/icon_down.png) no-repeat right;
+    width: 142px; border: none; outline: none;
+    font-size: 1.2rem;
+}
+main #search #searchFrm fieldset #filter option {}
+main #search #searchFrm fieldset #search_txt {padding: 10px 20px; width: 723px; background-color: #f1f1f1;}
+main #search #searchFrm fieldset #search_txt::placeholder {font-size: 1.333rem;}
+main #search #searchFrm fieldset #search_btn {padding: 0 20px; background: none;}
+main #search #searchFrm fieldset #search_btn img {}
+main #search .view {
+    border-radius: 10px; overflow: hidden; border: 1px solid #ccc;
+    display: flex;
+}
+main #search .view button {padding: 0 20px; background-color: #fff; height: 55px;}
+main #search .view button img {}
+main #search .view button.active {background-color: #ccc;}
+/* keyword */
+main .keyword {display: flex; gap:20px; flex-flow: row wrap;}
+main .keyword button {padding: 15px 20px; border-radius: 10px; font-size: 1.2rem;}
+main .keyword button.active {color: #fff; background-color: #5A85A6;}
+/* book_list */
+/* 모바일 필터 */
+main #book_list {padding-top: 60px;}
+main #book_list .m_filter {padding: 20px; display: flex; justify-content: flex-end; display: none;}
+main #book_list .m_filter #view {padding: 5px 10px;}
+main #book_list .m_filter #view option {}
+main #book_list ul {display: flex; flex-flow:row wrap;
+    gap:20px;
+    /* grid-auto-rows: minmax(min-content,max-content);
+    grid-template-columns: repeat(5,minmax(calc(20% - 74px),260px)); */
+    align-items: baseline;
+}
+main #book_list ul li:hover a .detail .book_hover {transform: translateY(0);}
+main #book_list ul li {position: relative; width: calc(20% - 80px / 5);}
+main #book_list ul li a {display: block;}
+main #book_list ul li a .detail {position: relative; overflow: hidden;}
+main #book_list ul li a .detail .book_hover {
+    transform: translateY(200px);
+    background-color: rgba(0,0,0,0.4); position: absolute;
+    bottom:0; padding: 20px; width: 100%;
+    transition: all 0.3s;
+}
+main #book_list ul li a .detail .book_cv {height:420px;}
+main #book_list ul li a .detail .book_cv img {height: 100%; box-shadow: 0 4px 4px rgba(0,0,0,0.25);}
+main #book_list ul li a .detail .book_hover p {color:#fff; margin-bottom: 20px;}
+main #book_list ul li a .detail .book_hover p:last-child {margin-bottom: 0;}
+main #book_list ul li a .detail .book_hover p em {font-weight: 500;}
+main #book_list ul li a .txt {}
+main #book_list ul li a .txt h2 {font-size: 1.333rem; font-weight: 700; margin: 20px 0;}
+main #book_list ul li a .txt .writer {color: #888;}
+main #book_list ul li .zoom {position: absolute; bottom:20px; right: 20px; background: none;}
+main #book_list ul li .zoom img {}
+/* list_btnw */
+main #list_btn {padding: 30px 0; display: flex; justify-content: center; gap:20px;}
+main #list_btn a {padding: 20px; border-radius: 10px; border: 1px solid #ccc; color:#888;}
+main #list_btn a.skip_page {border: none; color:#000;}
+main #list_btn a.active {background-color: #5A85A6; color:#fff; border: 1px solid #5A85A6;}

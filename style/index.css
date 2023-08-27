@@ -1,7 +1,5 @@
 /* 공통 여백 */
-main #new_book,
-main #news,
-main #youtube {padding: 0 120px;}
+main section {padding: 0 120px;}
 /* 공통 타이틀 css */
 main section .title h2 {font-size: 2.369rem; font-weight: 700;}
 main section .title .sub_title {font-size: 1.333rem; color:#888; margin-bottom: 20px;}
