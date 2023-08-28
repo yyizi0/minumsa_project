@@ -1,5 +1,5 @@
 /* 반응형 */
-header, footer {min-width: 420px;}
+header, footer {min-width: 430px;}
 /* header */
 header {
     position: fixed; top: 0; left: 0; z-index: 999;
@@ -99,8 +99,9 @@ header .m_nav_open ul > li > a {
 header .m_nav_open ul > li:last-child > a {border-bottom:0;}
 header .m_nav_open ul > li > .sub.active {display: flex; flex-flow:column nowrap; background-color: #5A85A6;}
 header .m_nav_open ul > li > .sub {display: none;}
-header .m_nav_open ul > li > .sub li {}
+header .m_nav_open ul > li > .sub li {transition: all 0.3s;}
 header .m_nav_open ul > li > .sub li a {color:#fff; font-size: 1.333rem;}
+header .m_nav_open ul > li > .sub li:hover {background-color: #3f5d74;}
 /* footer */
 footer {
     background-color: #222;

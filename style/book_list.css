@@ -1,5 +1,6 @@
 /* main */
-main section {padding: 0 120px; min-width: 420px;}
+main {padding-top: 100px;}
+main section {padding: 0 120px; min-width: 430px;}
 main .title {
     display: flex; align-items: center; justify-content: space-between;
     margin: 60px 0 30px;

@@ -27,7 +27,11 @@
     header .user_menu a:nth-child(3) {padding-right: 20px;}
     header .user_menu .open_nav {display: flex;}
     /* book_detail.html */
-    main #book {flex-flow:column nowrap;}
+    main #book {}
+    main #book .book p {width: 227px;}
+    main #book .right .info_wrap {margin-bottom: 50px;}
+    main #book .right .info_wrap h1 {font-size: 2.369rem;}
+    main #book .right .info_wrap h2 {font-size: 1.333rem; margin-bottom: 50px;}
 }/* 1200px end */
 @media screen and (max-width:1024px) {
     main section {padding: 0 30px;}
@@ -45,7 +49,7 @@
     main #news .contents {width: 100%;}
     /* #youtube */
     main #youtube .contents iframe {height: 465px;}
-    
+    main #book .right .link_wrap .link {flex-flow:row wrap;}
 }/* 1024px end */
 @media screen and (max-width:900px) {
     /* index.html */
@@ -60,7 +64,17 @@
     main #youtube .contents iframe {height: 380px;}
     /* book_list.html */
     main #book_list ul li {width: calc(50% - 20px / 2);}
-    main #book .right {width: 100%;}
+    /* book_detail */
+    main #book {flex-flow:column nowrap;}
+    main #book .right .info_wrap {margin: 30px 0;}
+    main #book .right .info_wrap h2 {margin-bottom: 30px;}
+    main #book .right .link_wrap h2,
+    main #book .right .info_wrap p em {font-size: 1.333rem;}
+    main #book .right .info_wrap p,
+    main #book .right .info_wrap .info dt,
+    main #book .right .info_wrap .info dd,
+    main #book .right .link_wrap .link a span {font-size: 1rem;}
+    main #book .right .link_wrap .link a {padding: 10px;}
 }/* 900px end */
 @media screen and (max-width:670px) {
     main section .title h2 {font-size: 1.777rem;}

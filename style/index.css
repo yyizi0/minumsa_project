@@ -4,7 +4,7 @@ main section {padding: 0 120px;}
 main section .title h2 {font-size: 2.369rem; font-weight: 700;}
 main section .title .sub_title {font-size: 1.333rem; color:#888; margin-bottom: 20px;}
 /* main */
-main {min-width: 420px;}
+main {min-width: 430px;}
 /* #main_bnr */
 main #main_bnr {}
 main #main_bnr #main_slide {position: relative;}
@@ -52,9 +52,10 @@ main #new_book .tab_contents .contents {
     display: flex; gap:20px;
     flex-flow:row wrap;
 }
+main #new_book .tab_contents .contents a:hover .book_cv img {box-shadow: 0 4px 4px rgba(0,0,0,0.5);}
 main #new_book .tab_contents .contents a {width: calc(20% - 80px / 5);}
 main #new_book .tab_contents .contents a .book_cv {height: 420px; /* overflow: hidden; */}
-main #new_book .tab_contents .contents a .book_cv img {height:100%;  box-shadow: 0 4px 4px rgba(0,0,0,0.25);}
+main #new_book .tab_contents .contents a .book_cv img {height:100%;  box-shadow: 0 4px 4px rgba(0,0,0,0.25); transition: box-shadow 0.3s;}
 main #new_book .tab_contents .contents a .txt {padding: 20px 0;}
 main #new_book .tab_contents .contents a h3 {font-size: 1.333rem; font-weight: 700; margin-bottom: 20px;}
 main #new_book .tab_contents .contents a .writer {color:#888;}
