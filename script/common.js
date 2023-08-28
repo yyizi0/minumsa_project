@@ -52,8 +52,7 @@ function init() {
 }
 init()
 m_nav_a.forEach(function(t,i){
-    t.addEventListener('click',function(e){
-        e.preventDefault()
+    t.addEventListener('click',function(){
         for(let j of m_nav_sub){j.classList.remove('active')}
         m_nav_sub[i].classList.add('active')
     })
