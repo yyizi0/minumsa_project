@@ -25,8 +25,9 @@
         <section id="book">
             <div class="book">
                 <p><img src="./images/book_01.jpg" alt="말 놓을 용기 표지"></p>
-                <a href="#"><img src="./images/icon_zoom_in.png" alt=""><span>크게보기</span></a>
+                <a href="./images/book_01.jpg" target="_blank"><img src="./images/icon_zoom_in.png" alt=""><span>크게보기</span></a>
             </div>
+            <!-- <div class="lightbox-overlay"><img src="./images/book_01.jpg" alt="말 놓을 용기 표지" ></div> -->
             <div class="right">
                 <div class="info_wrap">
                     <h1>말 놓을 용기</h1>
@@ -95,5 +96,17 @@
     <?php include("./footer.php") ?>
     <!-- common.js -->
     <script src="./script/common.js"></script>
+    <script>
+        const tab_menu = document.querySelectorAll('#detail .tab_menu a')
+        console.log(tab_menu)
+        tab_menu[0].classList.remove('active')
+        tab_menu.forEach(function(t,i){
+            t.addEventListener('click',function(e){
+                e.preventDefault()
+                for(let j of tab_menu){j.classList.remove('active')}
+                t.classList.add('active')
+            })
+        })
+    </script>
 </body>
 </html>

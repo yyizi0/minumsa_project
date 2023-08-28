@@ -229,5 +229,23 @@
     <?php include("./footer.php") ?>
     <!-- common.js -->
     <script src="./script/common.js"></script>
+    <script>
+        const keywords = document.querySelectorAll('.keyword button')
+        const view_btn = document.querySelectorAll('.view button')
+        console.log(keywords,view_btn)
+        keywords[0].classList.remove('active')
+        keywords.forEach(function(t,i){
+            t.addEventListener('click',function(){
+                for(let j of keywords){j.classList.remove('active')}
+                t.classList.add('active')
+            })
+        })
+        view_btn.forEach(function(t,i){
+            t.addEventListener(('click'), function(){
+                for(let j of view_btn){j.classList.remove('active')}
+                t.classList.add('active')
+            })
+        })
+    </script>
 </body>
 </html>
