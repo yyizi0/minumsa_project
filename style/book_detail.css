@@ -48,7 +48,7 @@ main .list {text-align: right;}
 main .list a {color:#888; font-size: 1.333rem; padding: 30px 0; display: inline-block; transition: color 0.3s;}
 main .list a:hover {color:#000;}
 /* #detail */
-main #detail {}
+main #detail {margin-bottom: 100px;}
 main #detail .tab_menu {padding-top: 30px; border-bottom: 1px solid #ccc;}
 main #detail .tab_menu a {
     display: inline-block;

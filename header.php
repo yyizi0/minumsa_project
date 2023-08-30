@@ -72,7 +72,6 @@
             <span></span>
             <span></span>
         </a>
-        <!-- <button id="close" type="button"><img src="./images/icon_close.png" alt="모바일 메뉴 닫기"></button> -->
     </div>
     <div class="m_nav_open active">
         <ul>

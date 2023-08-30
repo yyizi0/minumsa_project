@@ -1,5 +1,5 @@
 /* 공통 여백 */
-main section {padding: 0 120px;}
+main section {padding: 0 120px; margin-bottom: 100px;}
 /* 공통 타이틀 css */
 main section .title h2 {font-size: 2.369rem; font-weight: 700;}
 main section .title .sub_title {font-size: 1.333rem; color:#888; margin-bottom: 20px;}
@@ -60,7 +60,7 @@ main #new_book .tab_contents .contents a .txt {padding: 20px 0;}
 main #new_book .tab_contents .contents a h3 {font-size: 1.333rem; font-weight: 700; margin-bottom: 20px;}
 main #new_book .tab_contents .contents a .writer {color:#888;}
 /* #news */
-main #news {display: flex; justify-content: space-between; margin: 60px 0 30px;}
+main #news {display: flex; justify-content: space-between; padding-top: 60px;}
 main #news .title {width: 50%;}
 main #news .title h2 {line-height: 54px;}
 main #news .title h2 em {font-size: 2.369rem; font-weight: 700; color:#5A85A6;}
