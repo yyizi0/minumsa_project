@@ -40,10 +40,9 @@ window.addEventListener('scroll',function(){
 m_nav_sub[0].classList.remove('active')
 open_nav.classList.remove('active')
 m_nav_open.classList.remove('active')
-function toggleHandler(e) {
+function toggleHandler() {
     open_nav.classList.toggle('active')
     m_nav_open.classList.toggle('active')
-    e.preventDefault()
 }
 function init() {
     open_nav.addEventListener("click", toggleHandler)
